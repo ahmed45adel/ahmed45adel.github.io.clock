@@ -1,0 +1,195 @@
+body {
+    background-color: lightgrey;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    display: box;
+    margin: 5% auto auto auto;
+}
+
+.frame {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: grey;
+    border-radius: 50%;
+    left: 15%;
+    top: 20%;
+}
+
+.frame-inner {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 50%;
+    left: 5%;
+    top: 5%;
+}
+
+.twelve {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 0;
+    left: 40%;
+}
+
+.six {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: -5%;
+    left: 40%;
+}
+
+.nine {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 40%;
+    left: -5%;
+}
+
+.three {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 40%;
+    right: -5%;
+}
+
+.one {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 3%;
+    right: 20%;
+}
+
+.two {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 17%;
+    right: 5%;
+}
+
+.four {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 17%;
+    right: 5%;
+}
+
+.five {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 2%;
+    right: 20%;
+}
+
+.seven {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 2%;
+    left: 20%;
+}
+
+.eight {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 17%;
+    left: 5%;
+}
+
+.ten {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 17%;
+    left: 5%;
+}
+
+.eleven {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 3%;
+    left: 20%;
+}
+
+.center {
+    width: 10%;
+    height: 10%;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+.minute {
+    position: absolute;
+    width: 1%;
+    height: 40%;
+    background: black;
+    border: 1px solid black;
+    margin-left: 49.5%;
+    margin-top: 10%;
+    transform-origin: 50% 100%;
+    animation: rotate 3600s infinite steps(60);
+}
+
+.hour {
+    position: absolute;
+    width: 1%;
+    height: 30%;
+    background: yellow;
+    border: 1px solid black;
+    margin-left: 49.5%;
+    margin-top: 20%;
+    transform-origin: 50% 100%;
+    animation: rotate 43200s infinite linear;
+}
+
+.seconds {
+    width: .5%;
+    height: 40%;
+    background: blue;
+    position: absolute;
+    margin-left: 49.75%;
+    margin-top: 10%;
+    transform-origin: 50% 100%;
+    animation: rotate 60s infinite steps(60);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* responsive styling */
+
+@media all and (max-width:600px) {
+    .box {
+        margin-top: 100px;
+        height: 300px;
+        width: 300px;
+    }
+    body {
+        font-size: 1.5em;
+    }
+}
